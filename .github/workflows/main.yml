@@ -24,8 +24,8 @@ jobs:
       - name: npm install, build, and test
         run: |
           npm install
-          npx nx build --project song-list-web -c production
-          npx nx build --project data-api -c production
+          npx nx build --project song-list-web 
+          npx nx build --project data-api
           npm run test --if-present
 
       - name: Zip artifacts for deployment
